@@ -1,8 +1,14 @@
 const express= require("express");
 const dotenv=require("dotenv");
 dotenv.config()
+const cors = require('cors');
+
+
+
+// Enable CORS for all routes
 
 const nodeServer=express();
+nodeServer.use(cors());
 const getDataFromDB=require('./dbconifg')
 
 const port=process.env.PORT;
