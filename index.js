@@ -18,7 +18,7 @@ nodeServer.get('/products', async (req, res) => {
     }
   });
 
-nodeServer.listen(port,host,()=>{
+nodeServer.listen(port,()=>{
     console.log("server started")
 })
 
